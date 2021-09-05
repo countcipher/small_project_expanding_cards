@@ -21,6 +21,7 @@ body{
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
+    /*border: solid 3px transparent;*/
 }
 .panel:nth-child(1){
     background-image: url('images/img0.jpg');
@@ -47,7 +48,7 @@ body{
     z-index: 100;
 }
 .panel.active{
-    flex: 8;
+    flex: 10;
 }
 .panel.active h3{
     opacity: 1;
@@ -55,6 +56,9 @@ body{
 }
 .panel.active .glass{
     background-color: rgba(0,0,0,0);
+}
+.panel:hover{
+    /*border-color: red;*/
 }
 .container{
     display: flex;
