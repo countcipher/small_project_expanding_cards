@@ -20,8 +20,10 @@ body{
     flex: 1;
     margin: 10px;
     position: relative;
-    transition: flex 0.7s ease-in;
+    transition: flex 0.7s ease-in-out;
     /*border: solid 3px transparent;*/
+    justify-content: center;
+    align-items: center;
 }
 .panel:nth-child(1){
     background-image: url('images/img0.jpg');
@@ -45,7 +47,7 @@ body{
     left: 20px;
     margin: 0;
     opacity: 0;
-    z-index: 100;
+    z-index: 1;
 }
 .panel.active{
     flex: 10;
@@ -74,7 +76,7 @@ body{
     top: 0;
     bottom: 0;
     border-radius: 50px;
-    z-index: 50;
+    z-index: 999;
     transition: background-color .7s;
 }
 
